@@ -11,6 +11,11 @@ export type SearchInputUnit = {
     currentPage: number;
     filter: Array<SearchFilter>;
     sort: Array<SearchSort>;
+    context?: QueryContextInput;
+};
+
+export type QueryContextInput = {
+    customerGroup: string;
 };
 
 export type SearchFilter = {

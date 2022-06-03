@@ -261,6 +261,7 @@ export const generateSearchInputContext = (
             currentPage: 1,
             filter: [{ attribute: "size", eq: "small" }],
             sort: [{ attribute: "relevance", direction: "DESC" }],
+            context: { customerGroup: "NLI" },
         },
     ],
     ...overrides,
