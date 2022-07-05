@@ -1,5 +1,5 @@
 import "@adobe/adobe-client-data-layer";
-import MagentoStorefrontEvents from "./MagentoStorefrontEvents";
+import { default as mse, MagentoStorefrontEvents } from "./minimal";
 
 export { MagentoStorefrontEvents };
-export default new MagentoStorefrontEvents();
+export default mse;

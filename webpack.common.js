@@ -9,9 +9,12 @@ const copyRightText =
 const banner = `${name}@v${version}\n${copyRightText}`;
 
 const config = {
-    entry: "./src/index.ts",
+    entry: {
+        index: "./src/index.ts",
+        minimal: "./src/minimal.ts",
+    },
     output: {
-        filename: "index.js",
+        filename: "[name].js",
         path: path.resolve(__dirname, "dist"),
         publicPath: "",
         library: {
